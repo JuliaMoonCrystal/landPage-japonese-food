@@ -1,0 +1,106 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+<body>
+    <div id="bg-image"></div>
+
+    <h1>
+        Japanese <span>food</span>
+    </h1>
+
+    <p>
+        Os melhores sabores de comida Japonesa
+        <br> a um clique de distância
+    </p>
+
+    <a href="https://api.whatsapp.com/send?phone=55DDD9876543210&text=Quero fazer um pedido." target="_blank">Fazer meu
+        pedido</a>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: "Spectral";
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+
+        h1 {
+            font-family: "Beth Ellen";
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+
+        h1 span {
+            color: #FF5563;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 4.5rem;
+        }
+
+        a {
+            background-color: #FF5563;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+
+            font-size: 1.5rem;
+            border-radius: .5rem;
+        }
+
+        a:hover {
+            background-color: #ff3e4e;
+        }
+
+        /* BG IMAGE */
+        #bg-image {
+            position: absolute;
+            inset: 0;
+            background-image: url("https://images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+
+        /* ANIMATION */
+
+        h1,
+        p,
+        a {
+            animation: appear 1s backwards;
+        }
+
+        h1 {
+            animation-delay: 0.2s;
+        }
+
+        p {
+            animation-delay: 0.8s;
+        }
+
+        a {
+            animation-delay: 1.6s;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (width < 40rem) {
+            html {
+                font-size: 70%;
+            }
+        }
+    </style>
+</body>
